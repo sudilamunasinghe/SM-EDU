@@ -21,10 +21,12 @@ body{
 }
 .search{
     width: 30%;
+    position: relative;
+    
 }
 .search input{
     position: relative;
-    left: 70%;
+    left: 120px;
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 15px;
@@ -44,7 +46,7 @@ body{
     font-size: 20px;
     position: relative;
     top: 20px;
-    left: 350px;
+    left: 210px;
 }
 .nav ul{
    width: 100%; 
@@ -79,7 +81,7 @@ body{
     }
     .search i{
         top: 20px;
-        left: 170px;
+        left: 200px;
     }
     .nav ul li{
         padding-right: 0px;
@@ -186,10 +188,12 @@ body{
     }
     .search{
         width: 90%;
-        right: 50%;
     }
     .search i{
-        left: 580px;
+        left: 190px;
+    }
+    .search input{
+        left: 120px;
     }
 }
 @media screen and (max-width: 450px){
