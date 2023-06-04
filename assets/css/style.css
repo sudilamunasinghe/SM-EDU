@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: none;
+    max-width: 100vw;
+}
+
+    /*--- Styles for Navigation Bar ---*/
+.nav{
+    height: 80px;
+    background-color: rgb(0, 1, 65);
+    display: flex;
+    justify-content:space-evenly;
+    max-width: 100vw;
+    padding-left: 20px;
+}
+.nav-links{
+    width: 70%;
+}
+.search{
+    width: 25%;
+}
+.search input{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    border-radius: 70px;
+    border: 1px solid #d1d1d146;
+    width: 180px;
+    background-color: transparent;
+    outline: none;
+    color: #ffffff;
+    color: #d1d1d180;
+}
+.search input::placeholder{
+    font-size: 15px;
+}
+.search i{
+    color:#d1d1d180 ;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+.nav ul{
+   width: 100%; 
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.nav ul li{
+    display: inline;
+    padding-right: 40px;
+}
+.nav li a{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.5s ease-out;
+    font-weight: 500;
+}
+.nav li a:hover{
+    color: gold;
+}
+@media screen and (max-width: 1000px){
+    .nav{
+        justify-content: initial;
+    }
+    .nav-links{
+        width: 70%;
+    }
+    .search input{
+        width: 150px;
+    }
+    .search i{
+        top: 20px;
+        left: 170px;
+    }
+    .nav ul li{
+        padding-right: 0px;
+        padding-left: 30px;
+    }
+    .search{
+        position: relative;
+        right: 20px;
+    }
+}
+.social-nav{
+    background-color: rgb(236, 173, 12);
+    height: 40px;
+}
+.social-nav-icon{
+    color: #ffffff;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 10px;
+}
+.social-nav-container{
+    display: flex;
+    position: relative;
+    top: 50%;
+    float: right;
+}
+.social-nav-icon i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.social-nav-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #dfdfdf4d;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2 ease-out;
+}
+.social-nav-icon:hover{
+    scale: 1.1;
+}
+
+/*--- Mobile Navigation Menu---*/
+.mobile-nav{
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(27, 199, 0); 
+    position: absolute;
+    right: 0px;
+    padding-top: 20px;
+    top: 0;
+    display: none;
+}
+.mobile-nav ul{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mobile-nav ul li{
+    list-style: none;
+    padding-bottom: 20px;
+    position: relative;
+    left: 100px;
+    transform: translateX(-50%);
+
+}
+.mobile-nav ul li a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    position: relative;
+    left: 70px;
+}
+.mobile-nav-link{
+    width: 200px;
+}
+.nav-bar-icon{
+    position: relative;
+    top: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    width: 5%;
+}
+.nav-close-icon{
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+@media screen and (max-width: 850px){
+    .nav-links{
+        display: none;
+    }
+    .search{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 450px){
+    .search{
+        width: 85%;
+    }
+}
+
+
