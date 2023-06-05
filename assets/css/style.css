@@ -238,7 +238,7 @@ body{
 .home-slider .slides-div{
     width: 40%;
     position: relative;
-    left: 40px;
+    left: 100px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -271,6 +271,22 @@ body{
 .home-slider .home-slides .slides-div button:hover{
     background-color: transparent;
     color: rgb(236, 173, 12);
+}
+@media screen and (max-width: 1000px){
+    .home-slider .slides-div{
+        width: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .home-slider .slides-div{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .home-slider .slides-div h1{
+        font-size: 35px;
+    }
 }
 
 
