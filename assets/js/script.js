@@ -1,11 +1,11 @@
 // Responsive Navigation Bar
 $(".nav-bar-icon").click(function(){
     $(".mobile-nav").css({
-        visibility: 'visible',
-        right: '0',
+        display: 'block',
+        right: '0'
     })
     $(this).css({
-        visibility: 'hidden',
+        display: 'none',
     })
     $(".nav-close-icon").css({
         visibility: 'visible',
@@ -14,13 +14,13 @@ $(".nav-bar-icon").click(function(){
 })
 $(".nav-close-icon").click(function(){
     $(".mobile-nav").css({
-        visibility: 'hidden',
+        display: 'none',
         right: '-200px',
     })
     $(this).css({
         visibility: 'hidden',
     })
     $(".nav-bar-icon").css({
-        visibility: 'visible',
+        display: 'block',
     })
 })
