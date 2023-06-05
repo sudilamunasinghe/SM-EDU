@@ -1,7 +1,8 @@
 // Responsive Navigation Bar
 $(".nav-bar-icon").click(function(){
     $(".mobile-nav").css({
-        display : 'block',
+        visibility: 'visible',
+        right: '0',
     })
     $(this).css({
         visibility: 'hidden',
@@ -13,7 +14,8 @@ $(".nav-bar-icon").click(function(){
 })
 $(".nav-close-icon").click(function(){
     $(".mobile-nav").css({
-        display : 'none',
+        visibility: 'hidden',
+        right: '-200px',
     })
     $(this).css({
         visibility: 'hidden',

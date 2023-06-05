@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
 }
+html{
+    overflow-x: hidden;
+}
 body{
-    overflow: none;
+    overflow-x: hidden;
     max-width: 100vw;
 }
 
@@ -15,6 +18,7 @@ body{
     justify-content:space-evenly;
     max-width: 100vw;
     padding-left: 20px;
+    overflow-x: hidden;
 }
 .nav-links{
     width: 70%;
@@ -134,10 +138,11 @@ body{
     width: 200px;
     background-color: rgb(27, 199, 0); 
     position: absolute;
-    right: 0px;
+    right: -200px;
     padding-top: 20px;
     top: 0;
-    display: none;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
 }
 .mobile-nav ul{
     position: absolute;
@@ -162,6 +167,7 @@ body{
 }
 .mobile-nav-link{
     width: 200px;
+    margin-left: 0%;
 }
 .nav-bar-icon{
     position: relative;
@@ -170,7 +176,8 @@ body{
     font-size: 20px;
     cursor: pointer;
     width: 5%;
-    visibility: hidden;
+    display: none;
+   
 }
 .nav-close-icon{
     position: relative;
@@ -181,7 +188,7 @@ body{
 }
 @media screen and (max-width: 850px){
     .nav-bar-icon{
-        visibility: visible;
+        display: block
     }
     .nav-links{
         display: none;
