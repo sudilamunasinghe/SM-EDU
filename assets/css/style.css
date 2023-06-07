@@ -485,3 +485,94 @@ body{
         transform: scale(0.9);
     }
 }
+
+/*--- Intro Section ---*/
+.intro{
+    width: 100%;
+    background-image: url("../../assets/images/intro-back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+.intro-overlay{
+    background: rgb(250,95,28);
+    background: linear-gradient(90deg, rgba(250,95,28,0.3561799719887955) 0%, rgba(255,102,0,0.8491771708683473) 100%);
+    padding: 100px 0px;
+}
+.intro-container{
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.intro-div1{
+    width: 50%;
+}
+.intro-div2{
+    width: 50%;
+}
+.intro-div1 img{
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.intro-div2 h2{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.intro-div2 p{
+    font-size: 18px;
+}
+.intro-count{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+.intro-count-div{
+    width: 20%;
+    text-align: center;
+}
+.intro-count h2{
+    font-size: 40px;
+}
+.intro-count p{
+    font-size: 20px;
+}
+@media screen and (max-width: 1000px){
+    .intro-div1{
+        width: 600px;
+    }
+    .intro-div1 img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .intro-count{
+        max-width: 650px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        justify-content: space-evenly;
+    }
+    .intro-div2{
+        width: 600px;
+    }
+    .intro-count-div{
+        width: 120px;
+    }
+}
+@media screen and (max-width:600px){
+    .intro-count-div{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
