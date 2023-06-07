@@ -576,3 +576,118 @@ body{
         margin-bottom: 60px;
     }
 }
+
+/*--- Courses Section ---*/
+.courses{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 100px 0px;
+}
+.courses h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.courses-para{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 600px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(94, 94, 94);
+    line-height: 1.5;
+    font-weight: 500;
+}
+.courses-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.courses-card{
+    width: 23%;
+}
+.courses-card-img{
+    width: 100%;
+}
+.courses-card-img img{
+    width: 100%;
+}
+.courses-card-info{
+    display: flex;
+    
+}
+.courses-card-info-div{
+    display: inline-block;
+    left: 0;
+    margin: 15px 0px;
+}
+.courses-card-info-div h3{
+    font-size: 12px;
+    display: inline-block;
+    color: rgb(94, 94, 94);
+    margin-right: 20px;
+}
+.courses-card-info-div i{
+    font-size: 12px;
+    color: orangered;
+}
+.courses-card-details h2{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.courses-card-details p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(94, 94, 94);
+    line-height: 1.5;
+    font-weight: 500;
+}
+.courses-card-btn{
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    width: 120px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.courses-card-btn:hover{
+    background-color: transparent;
+    color: orangered;
+}
+@media screen and (max-width: 1000px){
+    .courses-card-info{
+        justify-content: space-between;
+    }
+    .courses-card{
+        width: 350px;
+        margin-bottom: 60px;
+    }
+    .courses-card-info-div h3{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 750px){
+    .courses-card{
+        width: 400px;
+    }
+    .courses-para{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 450px){
+    .courses-card{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 310px){
+    .courses-card{
+        width: 250px;
+    }
+}
