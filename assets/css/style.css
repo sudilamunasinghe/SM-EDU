@@ -821,3 +821,161 @@ body{
         width: 80%;
     }
 }
+
+/*--- Quote Section ---*/
+.quote{
+    background-image: url("../../assets/images/quote.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.quote-overlay{
+    background: rgb(250,95,28);
+    background: linear-gradient(90deg, rgba(250,95,28,0.3561799719887955) 0%, rgba(255,102,0,0.8491771708683473) 100%);
+    height: 100%;
+    width: 100%;
+    padding: 100px 0px;
+}
+.quote-details{
+    width: 50%;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+}
+.quote-details h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+.quote-para{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: rgb(94, 94, 94);
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffffff;
+}
+.quote-form input{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    width: 40%;
+    margin-right: 40px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.quote-form input::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+.quote-form select{
+    width: 40%;
+    margin-right: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    margin-top: 40px;
+    outline: none;
+}
+#txt-area{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    width: calc(80% + 40px);
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 10px;
+}
+#txt-area::placeholder{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+#course,&::after{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+#course option{
+    color: #494949;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+#quote-btn{
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 40px;
+}
+#quote-btn:hover{
+    background-color: transparent;
+    color: orangered;
+}
+#telephone{
+    appearance: none;
+}
+@media screen and (max-width: 1000px){
+    .quote-details{
+        width: 80%;
+        position: relative;
+        left:50%;
+        transform: translateX(-50%);
+        margin-right: 0;
+    }
+    .quote-form{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 650px){
+    .quote-form input{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .quote-form select{
+        margin-top: 0px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    #txt-area{
+        width: 100%;
+        margin-top: 0px;
+    }
+}
