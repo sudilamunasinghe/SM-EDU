@@ -1277,3 +1277,216 @@ body{
     }
 }
 
+/*--- Footer Section ----*/
+.footer{
+    background-color: #272727;
+    padding: 100px 40px;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+}
+.footer-div{
+    width: 300px;
+}
+.footer-div1{
+    width: 350px;
+}
+.footer-div2{
+    width: 350px;
+}
+.footer-div3{
+    width: 170px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer-div h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 40px;
+}
+.footer-contact-div1{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-contact-div1 i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.footer-contact-div1 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-contact-div2{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-contact-div2 i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.footer-contact-div2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-contact-div3{
+    display: flex;
+    margin-bottom: 10px;
+}
+.footer-contact-div3 i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.footer-contact-div3 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-div2-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-div2-flex img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.footer-blog-title{
+    width: 200px;
+}
+.footer-blog-title h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+.footer-blog-para{
+    display: inline;
+}
+.footer-blog-calender{
+    display: inline;
+}
+.footer-blog-title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 30px;
+    display: inline;
+    width: 60%;
+}
+.footer-blog-title h3{
+    margin-bottom: 15px;
+}
+.footer-blog-title-flex{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer-blog-title-div1{
+    margin-bottom: 8px;
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+}
+.footer-blog-title-div2{
+    display: flex;
+    width: 55%;
+}
+.footer-blog-title-div3{
+    display: flex;
+    width: 40%;
+}
+.footer-blog-title i{
+    margin-right: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+}
+.footer-div3 ul{
+    list-style: none;
+}
+.footer-div3 li{
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-div3 li{
+    margin-bottom: 10px;
+}
+.footer-div4 input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.footer-div4 input::placeholder{
+    font-size: 20px;
+    color: #000000;
+}
+.footer-div4 input[type="submit"]{
+    background-color: orangered;
+    border: 2px solid orangered;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer-connect-flex{
+    display: flex;
+    gap: 10px;
+}
+.footer-connect-icon{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.footer-connect-icon i{
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+.footer-connect-icon:hover{
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1000px){
+    .footer-div{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 750px){
+    .footer-div2, .footer-div4{
+        width: 50%;
+    }
+    .footer-blog-title{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 620px){
+    .footer-div2, .footer-div4{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 540px){
+    .footer-div{
+        width: 100%;
+    }
+    .footer-blog-title{
+        width: 60%;
+    }
+    .footer-div2-flex{
+        transform: scale(0.9);
+        position: relative;
+        left: 0;
+    }
+}
