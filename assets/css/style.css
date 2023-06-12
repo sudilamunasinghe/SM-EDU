@@ -215,6 +215,7 @@ body{
 .swiper-slide {
     background-position: center;
     background-size: cover;
+    margin: 0;
 }
 .swiper-slide img {
     display: block;
@@ -1216,6 +1217,7 @@ body{
     transform: translateX(-50%);
     background-color: #ffffff;
     padding: 90px 0px;
+
 }
 .testimonials-img{
     width: 150px;
@@ -1350,14 +1352,18 @@ body{
 }
 .footer-div2-flex{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+}
+.footer-div2-flex-div1, .footer-div2-flex-div2{
+    display: flex;
 }
 .footer-div2-flex img{
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 .footer-blog-title{
     width: 200px;
@@ -1383,27 +1389,32 @@ body{
 }
 .footer-blog-title-flex{
     display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
+    flex-direction: column;
+    font-size: 15px;
     margin-bottom: 30px;
+    color: #e7e7e786;
+    font-weight: 400;
 }
 .footer-blog-title-div1{
     margin-bottom: 8px;
-    font-weight: 600;
+
     display: flex;
     width: 100%;
 }
 .footer-blog-title-div2{
     display: flex;
-    width: 55%;
+    width: 55px;
+    margin-right: 20px;
+}
+.footer-blog-title-last{
+    display: flex;
 }
 .footer-blog-title-div3{
     display: flex;
-    width: 40%;
 }
 .footer-blog-title i{
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 15px;
     position: relative;
     top: 2px;
 }
@@ -1412,7 +1423,7 @@ body{
 }
 .footer-div3 li{
     font-size: 18px;
-    font-weight: 600;
+
 }
 .footer-div3 li{
     margin-bottom: 10px;
@@ -1459,6 +1470,11 @@ body{
 .footer-connect-icon:hover{
     transform: scale(1.2);
 }
+@media screen and (max-width: 1250px){
+    .footer-div{
+        width: 240px;
+    }
+}
 @media screen and (max-width: 1000px){
     .footer-div{
         width: 40%;
@@ -1483,10 +1499,19 @@ body{
     }
     .footer-blog-title{
         width: 60%;
+        height: auto;
     }
     .footer-div2-flex{
         transform: scale(0.9);
         position: relative;
         left: 0;
+    }
+}
+@media screen and (max-width: 300px){
+    .footer-blog-title-last{
+        flex-wrap: wrap;
+    }
+    .footer-blog-title-div2{
+        margin-bottom: 10px;
     }
 }
